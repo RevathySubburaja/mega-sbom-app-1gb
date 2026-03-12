@@ -180,27 +180,27 @@
         <dependency><groupId>com.azure</groupId><artifactId>azure-monitor-query</artifactId><version>1.2.0</version></dependency>
         <dependency><groupId>com.azure</groupId><artifactId>azure-monitor-ingestion</artifactId><version>1.1.0</version></dependency>
         
-        <!-- GCP SDK (for additional size) -->
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-storage</artifactId><version>2.29.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-bigquery</artifactId><version>2.34.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-pubsub</artifactId><version>1.125.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-spanner</artifactId><version>6.51.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-firestore</artifactId><version>3.15.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-datastore</artifactId><version>2.17.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-bigtable</artifactId><version>2.27.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-kms</artifactId><version>2.30.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-secretmanager</artifactId><version>2.26.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-logging</artifactId><version>3.15.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-monitoring</artifactId><version>3.28.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-compute</artifactId><version>1.34.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-container</artifactId><version>2.31.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-functions</artifactId><version>2.30.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-run</artifactId><version>0.30.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-aiplatform</artifactId><version>3.31.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-vision</artifactId><version>3.26.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-speech</artifactId><version>4.24.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-translate</artifactId><version>2.27.0</version></dependency>
-        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-language</artifactId><version>2.27.0</version></dependency>
+        <!-- GCP SDK (for additional size) - using stable versions -->
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-storage</artifactId><version>2.22.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-bigquery</artifactId><version>2.24.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-pubsub</artifactId><version>1.123.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-spanner</artifactId><version>6.40.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-firestore</artifactId><version>3.9.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-datastore</artifactId><version>2.14.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-bigtable</artifactId><version>2.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-kms</artifactId><version>2.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-secretmanager</artifactId><version>2.10.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-logging</artifactId><version>3.14.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-monitoring</artifactId><version>3.15.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-compute</artifactId><version>1.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-container</artifactId><version>2.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-functions</artifactId><version>2.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-run</artifactId><version>0.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-aiplatform</artifactId><version>3.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-vision</artifactId><version>3.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-speech</artifactId><version>4.10.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-translate</artifactId><version>2.20.0</version></dependency>
+        <dependency><groupId>com.google.cloud</groupId><artifactId>google-cloud-language</artifactId><version>2.20.0</version></dependency>
         
         <!-- Utilities -->
         <dependency><groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><version>1.18.30</version><scope>provided</scope></dependency>
@@ -396,6 +396,157 @@
         <dependency><groupId>io.jsonwebtoken</groupId><artifactId>jjwt-impl</artifactId><version>0.12.3</version><scope>runtime</scope></dependency>
         <dependency><groupId>org.keycloak</groupId><artifactId>keycloak-core</artifactId><version>23.0.3</version></dependency>
         <dependency><groupId>org.keycloak</groupId><artifactId>keycloak-admin-client</artifactId><version>23.0.3</version></dependency>
+        
+        <!-- Apache Spark (large dependencies) -->
+        <dependency><groupId>org.apache.spark</groupId><artifactId>spark-core_2.13</artifactId><version>3.5.0</version></dependency>
+        <dependency><groupId>org.apache.spark</groupId><artifactId>spark-sql_2.13</artifactId><version>3.5.0</version></dependency>
+        <dependency><groupId>org.apache.spark</groupId><artifactId>spark-mllib_2.13</artifactId><version>3.5.0</version></dependency>
+        <dependency><groupId>org.apache.spark</groupId><artifactId>spark-streaming_2.13</artifactId><version>3.5.0</version></dependency>
+        
+        <!-- Apache Hadoop (large dependencies) -->
+        <dependency><groupId>org.apache.hadoop</groupId><artifactId>hadoop-common</artifactId><version>3.3.6</version></dependency>
+        <dependency><groupId>org.apache.hadoop</groupId><artifactId>hadoop-hdfs-client</artifactId><version>3.3.6</version></dependency>
+        <dependency><groupId>org.apache.hadoop</groupId><artifactId>hadoop-aws</artifactId><version>3.3.6</version></dependency>
+        
+        <!-- Apache Flink (large dependencies) -->
+        <dependency><groupId>org.apache.flink</groupId><artifactId>flink-core</artifactId><version>1.18.0</version></dependency>
+        <dependency><groupId>org.apache.flink</groupId><artifactId>flink-streaming-java</artifactId><version>1.18.0</version></dependency>
+        <dependency><groupId>org.apache.flink</groupId><artifactId>flink-clients</artifactId><version>1.18.0</version></dependency>
+        
+        <!-- Apache Kafka (large dependencies) -->
+        <dependency><groupId>org.apache.kafka</groupId><artifactId>kafka-clients</artifactId><version>3.6.1</version></dependency>
+        <dependency><groupId>org.apache.kafka</groupId><artifactId>kafka-streams</artifactId><version>3.6.1</version></dependency>
+        
+        <!-- Elasticsearch (large) -->
+        <dependency><groupId>co.elastic.clients</groupId><artifactId>elasticsearch-java</artifactId><version>8.11.3</version></dependency>
+        
+        <!-- MongoDB (large) -->
+        <dependency><groupId>org.mongodb</groupId><artifactId>mongodb-driver-sync</artifactId><version>4.11.1</version></dependency>
+        <dependency><groupId>org.mongodb</groupId><artifactId>mongodb-driver-reactivestreams</artifactId><version>4.11.1</version></dependency>
+        
+        <!-- Cassandra (large) -->
+        <dependency><groupId>com.datastax.oss</groupId><artifactId>java-driver-core</artifactId><version>4.17.0</version></dependency>
+        <dependency><groupId>com.datastax.oss</groupId><artifactId>java-driver-query-builder</artifactId><version>4.17.0</version></dependency>
+        
+        <!-- Neo4j (large) -->
+        <dependency><groupId>org.neo4j.driver</groupId><artifactId>neo4j-java-driver</artifactId><version>5.15.0</version></dependency>
+        
+        <!-- InfluxDB -->
+        <dependency><groupId>com.influxdb</groupId><artifactId>influxdb-client-java</artifactId><version>6.12.0</version></dependency>
+        
+        <!-- Apache Camel (large) -->
+        <dependency><groupId>org.apache.camel</groupId><artifactId>camel-core</artifactId><version>4.3.0</version></dependency>
+        <dependency><groupId>org.apache.camel</groupId><artifactId>camel-http</artifactId><version>4.3.0</version></dependency>
+        <dependency><groupId>org.apache.camel</groupId><artifactId>camel-kafka</artifactId><version>4.3.0</version></dependency>
+        <dependency><groupId>org.apache.camel</groupId><artifactId>camel-aws2-s3</artifactId><version>4.3.0</version></dependency>
+        
+        <!-- Spring Cloud (large) -->
+        <dependency><groupId>org.springframework.cloud</groupId><artifactId>spring-cloud-starter-config</artifactId><version>4.1.0</version></dependency>
+        <dependency><groupId>org.springframework.cloud</groupId><artifactId>spring-cloud-starter-netflix-eureka-client</artifactId><version>4.1.0</version></dependency>
+        <dependency><groupId>org.springframework.cloud</groupId><artifactId>spring-cloud-starter-gateway</artifactId><version>4.1.0</version></dependency>
+        <dependency><groupId>org.springframework.cloud</groupId><artifactId>spring-cloud-starter-openfeign</artifactId><version>4.1.0</version></dependency>
+        <dependency><groupId>org.springframework.cloud</groupId><artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId><version>3.1.0</version></dependency>
+        
+        <!-- Quarkus extensions (large) -->
+        <dependency><groupId>io.quarkus</groupId><artifactId>quarkus-core</artifactId><version>3.6.4</version></dependency>
+        <dependency><groupId>io.quarkus</groupId><artifactId>quarkus-resteasy-reactive</artifactId><version>3.6.4</version></dependency>
+        
+        <!-- Micronaut (large) -->
+        <dependency><groupId>io.micronaut</groupId><artifactId>micronaut-core</artifactId><version>4.2.2</version></dependency>
+        <dependency><groupId>io.micronaut</groupId><artifactId>micronaut-http-client</artifactId><version>4.2.2</version></dependency>
+        
+        <!-- Vert.x (large) -->
+        <dependency><groupId>io.vertx</groupId><artifactId>vertx-core</artifactId><version>4.5.1</version></dependency>
+        <dependency><groupId>io.vertx</groupId><artifactId>vertx-web</artifactId><version>4.5.1</version></dependency>
+        <dependency><groupId>io.vertx</groupId><artifactId>vertx-kafka-client</artifactId><version>4.5.1</version></dependency>
+        <dependency><groupId>io.vertx</groupId><artifactId>vertx-pg-client</artifactId><version>4.5.1</version></dependency>
+        
+        <!-- Akka (large) -->
+        <dependency><groupId>com.typesafe.akka</groupId><artifactId>akka-actor-typed_2.13</artifactId><version>2.8.5</version></dependency>
+        <dependency><groupId>com.typesafe.akka</groupId><artifactId>akka-stream_2.13</artifactId><version>2.8.5</version></dependency>
+        
+        <!-- GraphQL Java (large) -->
+        <dependency><groupId>com.graphql-java</groupId><artifactId>graphql-java</artifactId><version>21.3</version></dependency>
+        <dependency><groupId>com.graphql-java-kickstart</groupId><artifactId>graphql-spring-boot-starter</artifactId><version>15.1.0</version></dependency>
+        
+        <!-- gRPC services -->
+        <dependency><groupId>io.grpc</groupId><artifactId>grpc-services</artifactId><version>1.59.0</version></dependency>
+        <dependency><groupId>io.grpc</groupId><artifactId>grpc-testing</artifactId><version>1.59.0</version></dependency>
+        
+        <!-- Apache Avro -->
+        <dependency><groupId>org.apache.avro</groupId><artifactId>avro</artifactId><version>1.11.3</version></dependency>
+        
+        <!-- Apache Parquet -->
+        <dependency><groupId>org.apache.parquet</groupId><artifactId>parquet-avro</artifactId><version>1.13.1</version></dependency>
+        
+        <!-- Apache ORC -->
+        <dependency><groupId>org.apache.orc</groupId><artifactId>orc-core</artifactId><version>1.9.2</version></dependency>
+        
+        <!-- Apache Arrow -->
+        <dependency><groupId>org.apache.arrow</groupId><artifactId>arrow-vector</artifactId><version>14.0.2</version></dependency>
+        <dependency><groupId>org.apache.arrow</groupId><artifactId>arrow-memory-netty</artifactId><version>14.0.2</version></dependency>
+        
+        <!-- Presto/Trino client -->
+        <dependency><groupId>io.trino</groupId><artifactId>trino-jdbc</artifactId><version>435</version></dependency>
+        
+        <!-- Debezium -->
+        <dependency><groupId>io.debezium</groupId><artifactId>debezium-api</artifactId><version>2.4.1.Final</version></dependency>
+        <dependency><groupId>io.debezium</groupId><artifactId>debezium-embedded</artifactId><version>2.4.1.Final</version></dependency>
+        
+        <!-- Apache Pulsar -->
+        <dependency><groupId>org.apache.pulsar</groupId><artifactId>pulsar-client</artifactId><version>3.1.2</version></dependency>
+        
+        <!-- NATS -->
+        <dependency><groupId>io.nats</groupId><artifactId>jnats</artifactId><version>2.17.2</version></dependency>
+        
+        <!-- RabbitMQ -->
+        <dependency><groupId>com.rabbitmq</groupId><artifactId>amqp-client</artifactId><version>5.20.0</version></dependency>
+        
+        <!-- ActiveMQ -->
+        <dependency><groupId>org.apache.activemq</groupId><artifactId>activemq-client</artifactId><version>5.18.3</version></dependency>
+        
+        <!-- Artemis -->
+        <dependency><groupId>org.apache.activemq</groupId><artifactId>artemis-jms-client</artifactId><version>2.31.2</version></dependency>
+        
+        <!-- JMS -->
+        <dependency><groupId>jakarta.jms</groupId><artifactId>jakarta.jms-api</artifactId><version>3.1.0</version></dependency>
+        
+        <!-- Apache CXF -->
+        <dependency><groupId>org.apache.cxf</groupId><artifactId>cxf-rt-frontend-jaxrs</artifactId><version>4.0.3</version></dependency>
+        <dependency><groupId>org.apache.cxf</groupId><artifactId>cxf-rt-rs-client</artifactId><version>4.0.3</version></dependency>
+        
+        <!-- Jersey -->
+        <dependency><groupId>org.glassfish.jersey.core</groupId><artifactId>jersey-client</artifactId><version>3.1.5</version></dependency>
+        <dependency><groupId>org.glassfish.jersey.core</groupId><artifactId>jersey-server</artifactId><version>3.1.5</version></dependency>
+        
+        <!-- RESTEasy -->
+        <dependency><groupId>org.jboss.resteasy</groupId><artifactId>resteasy-core</artifactId><version>6.2.6.Final</version></dependency>
+        <dependency><groupId>org.jboss.resteasy</groupId><artifactId>resteasy-client</artifactId><version>6.2.6.Final</version></dependency>
+        
+        <!-- Hibernate ORM -->
+        <dependency><groupId>org.hibernate.orm</groupId><artifactId>hibernate-core</artifactId><version>6.4.1.Final</version></dependency>
+        <dependency><groupId>org.hibernate.orm</groupId><artifactId>hibernate-envers</artifactId><version>6.4.1.Final</version></dependency>
+        
+        <!-- EclipseLink -->
+        <dependency><groupId>org.eclipse.persistence</groupId><artifactId>eclipselink</artifactId><version>4.0.2</version></dependency>
+        
+        <!-- JOOQ -->
+        <dependency><groupId>org.jooq</groupId><artifactId>jooq</artifactId><version>3.18.7</version></dependency>
+        
+        <!-- MyBatis -->
+        <dependency><groupId>org.mybatis</groupId><artifactId>mybatis</artifactId><version>3.5.15</version></dependency>
+        <dependency><groupId>org.mybatis.spring.boot</groupId><artifactId>mybatis-spring-boot-starter</artifactId><version>3.0.3</version></dependency>
+        
+        <!-- QueryDSL -->
+        <dependency><groupId>com.querydsl</groupId><artifactId>querydsl-jpa</artifactId><version>5.0.0</version><classifier>jakarta</classifier></dependency>
+        
+        <!-- Apache Lucene -->
+        <dependency><groupId>org.apache.lucene</groupId><artifactId>lucene-core</artifactId><version>9.9.1</version></dependency>
+        <dependency><groupId>org.apache.lucene</groupId><artifactId>lucene-queryparser</artifactId><version>9.9.1</version></dependency>
+        <dependency><groupId>org.apache.lucene</groupId><artifactId>lucene-analyzers-common</artifactId><version>8.11.2</version></dependency>
+        
+        <!-- Apache Solr -->
+        <dependency><groupId>org.apache.solr</groupId><artifactId>solr-solrj</artifactId><version>9.4.1</version></dependency>
     </dependencies>
 
     <build>
